@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ziperr Sturr</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f4f4f4;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+      background-image: url('https://files.catbox.moe/ycjj7n.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 15px;
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 7px #000;
+    }
+
+    img.logo {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #25D366;
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button.qris-btn {
+      background-color: #ff9800;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 15px;
+    }
+
+    .qris-image {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://files.catbox.moe/ycjj7n.jpg" class="logo" alt="Logo Ziperr" />
+    <h2>Ziperr Modss</h2>
+    <p><strong>🌐Alamat:</strong> Indonesia</p>
+    <p><strong>💸Portofolio:</strong>/128,69 USD$ / 2.096.614,63 IDR</p>
+    <p><strong>☕Email:</strong> ziperrgntg@gmail.com</p>
+
+    <a href="https://wa.me/6281263620850" target="_blank">
+      <button>Hubungi via WhatsApp👤</button>
+      <a href="https://whatsapp.com/channel/0029VasDn5G3mFYBlM8BCi1d" target="_blank">
+      <button>Link Sharee Randomm🔗</button>
+      <a href="https://chat.whatsapp.com/EsuFE0dFByVAzlPju0XjLH?mode=r_t" target="_blank">
+      <button>Link Grup Berdiskusi Bola /Anime ⚡</button>
+    </a>
+
+    <button class="qris-btn" onclick="showQRIS()">Tampilkan QRIS & Rekening</button>
+
+    <div id="qrisSection" class="hidden">
+      <img src=”https://files.catbox.moe/phd72p.jpg" alt="QRIS" class="qris-image" />
+      <p><strong>No. Rekening Dana:</strong> 082345285536 a/n Chatt </p>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://files.catbox.moe/9m0kjm.mp4" type="audio/mp4" />
+  </audio>
+
+  <script>
+    function showQRIS() {
+      document.getElementById("qrisSection").classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
+
